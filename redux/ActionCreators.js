@@ -168,6 +168,11 @@ export const postFavorite = campsiteId => dispatch => {
     }, 2000);
 };
 
+export const deleteFavorite = campsiteId => ({
+    type: ActionTypes.DELETE_FAVORITE,
+    payload: campsiteId
+});
+
 export const addFavorite = campsiteId => ({
     type: ActionTypes.ADD_FAVORITE,
     payload: campsiteId
